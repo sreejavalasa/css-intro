@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with CSS Selectors</title>
+    <style >
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        /* ID Selector */
+        #main-header {
+            background-color: #f9a7a7;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Class Selector */
+        .content {
+            padding: 10px;
+            background-color: #e9e9e9;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* Descendant Selector */
+        ul li {
+            color: green;
+        }
+        
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+        
+        input[type="email"] {
+            border: 2px solid red;
+            padding: 5px;
+        }
+        
+        /* Link Styling */
+        a {
+            color: darkblue;
+        }
+        </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Welcome to 10KCODERS</h1>
+    </header>
+    
+    <section class="content">
+        <h2>About Me</h2>
+        <p>Hello! Our institute provides training and educational support to graduates to be successful in career.</p>
+    </section>
+
+    <section class="content">
+        <h2>Skills Provided</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </form>
+
+    <footer>
+        <p>Location:Kukatpally,Hyderabad,Telanagana.</p>
+        <p>For any Queries Contact me at <a href="mailto:example@example.com">example@example.com</a></p>
+    </footer>
+</body>
+</html>
